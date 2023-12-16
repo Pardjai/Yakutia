@@ -6,3 +6,5 @@ node_modules
 .npm
 # vscode
 .vscode
+# local dev
+apiTests
