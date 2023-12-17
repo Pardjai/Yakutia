@@ -4,6 +4,9 @@ ARG NODE_VERSION=21.4.0
 
 FROM node:${NODE_VERSION}-alpine
 
+# Установка необходимых зависимостей, включая redis-cli и bash
+RUN apk --no-cache add redis bash
+
 ENV NODE_ENV production
 
 WORKDIR /usr/src/app
